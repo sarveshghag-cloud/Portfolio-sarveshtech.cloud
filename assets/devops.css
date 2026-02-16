@@ -1,0 +1,97 @@
+/* ================= ARCHITECTURE CARD ================= */
+/* =================  CARD LAYOUT ================= */
+
+.devops {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    padding: 40px 0;
+}
+
+.devops-card {
+    width: 100%;
+    max-width: 360px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 5px solid #007f73;
+}
+
+/* Hover Effect */
+.devops-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* Image */
+.devops-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+/* Title */
+.card-content h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.card-content p {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.card-content .btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #007f73;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover */
+.card-content .btn:hover {
+    background: #005f56;
+    transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .devops-card {
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .devops-card img {
+        height: 180px;
+    }
+
+    .card-content h2 {
+        font-size: 18px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+}

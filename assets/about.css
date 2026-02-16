@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 6rem 5% 2rem;
+    }
+
+    .about-img img {
+        width: 240px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    .about-img img {
+        width: 200px;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+}   

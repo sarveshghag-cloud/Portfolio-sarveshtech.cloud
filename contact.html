@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarvesh Ghag - Contact</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/contact.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <a href="index.html" class="logo">Sarvesh Ghag</a>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="myskill.html">My Skills</a>
+    <a href="certification.html">Certifications</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <h2 class="section-title">Contact <span>Me</span></h2>
+  <p class="section-desc">
+    Have a question, project idea, or opportunity?  
+    Feel free to reach out.
+  </p>
+
+  <form id="contact-form" class="contact-form">
+
+    <div class="input-group">
+      <input type="text" name="from_name" placeholder="Your Name" required>
+      <input type="email" name="from_email" placeholder="Your Email" required>
+    </div>
+
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+
+    <p id="form-status" style="margin-top:1.5rem;font-size:1.5rem;"></p>
+  </form>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3>Sarvesh Ghag</h3>
+      <p>Cloud Architect | AWS | DevOps</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="aws.html">Skills</a>
+      <a href="certification.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-social">
+      <h4>Connect</h4>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="mailto:yourmail@gmail.com"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Sarvesh Ghag. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ================= EMAILJS ================= -->
+<!-- ================= EMAILJS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function () {
+    emailjs.init("hX5yIYfLrt9briMZ3"); // your public key
+  })();
+</script>
+
+<script src="js/contact.js"></script>
+</body>
+</html>
+
+</body>
+</html>
